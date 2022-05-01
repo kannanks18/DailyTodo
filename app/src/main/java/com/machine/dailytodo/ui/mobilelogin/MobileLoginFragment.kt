@@ -32,7 +32,7 @@ class MobileLoginFragment : Fragment(R.layout.fragment_mobile_login) {
     var loading: Dialog? = null
 
     private var storedVerificationId: String? = ""
-    private var mobile: String? = "9567870602"
+    private var mobile: String? = ""
     private var otpValue: String? = "0"
     private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
     private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
