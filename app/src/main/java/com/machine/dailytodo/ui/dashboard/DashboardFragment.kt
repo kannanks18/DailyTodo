@@ -94,7 +94,7 @@ open class DashboardFragment : Fragment(R.layout.fragment_dashboard), TODOClickL
             todoDatePicker.show(parentFragmentManager, "tags")
         }
         todoDatePicker.addOnPositiveButtonClickListener {
-            // formatting date in dd-mm-yyyy format.
+
             val dateFormatter = SimpleDateFormat("dd-MMM-yyyy")
             val date = dateFormatter.format(Date(it))
             binding.datePick.text = date.toString()
@@ -318,19 +318,16 @@ open class DashboardFragment : Fragment(R.layout.fragment_dashboard), TODOClickL
             timePicker.show(parentFragmentManager, "tag")
         }
         datePicker.addOnPositiveButtonClickListener {
-            // formatting date in dd-mm-yyyy format.
             val dateFormatter = SimpleDateFormat("dd-MMM-yyyy")
             val date = dateFormatter.format(Date(it))
             todoDatePick.text = date.toString()
 
         }
         timePicker.addOnPositiveButtonClickListener {
-            // formatting date in dd-mm-yyyy format.
             val pickedHour: Int = timePicker.hour
             val pickedMinute: Int = timePicker.minute
 
-            // check for single digit hour hour and minute
-            // and update TextView accordingly
+
             val formattedTime: String = when {
                 pickedHour > 12 -> {
                     if (pickedMinute < 10) {
