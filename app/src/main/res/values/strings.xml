@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Daily Todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userName">Username</string>
+    <string name="continue_with_google">CONTINUE WITH GOOGLE</string>
+    <string name="continue_with_phone">CONTINUE WITH PHONE</string>
+    <string name="search">Search</string>
+    <string name="hamburger">hamburger</string>
+    <string name="content_description_search">Search</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="your_web_client_id">AIzaSyB9x8JhMHWmRohcTOYmXGdrUpeP-haihWo</string>
+    <string name="Completed">Complete</string>
+    <string name="notification_title"> Complete!!!!</string>
+    <string name="notification_subtitle"> 111111111</string>
+    <string name="notification_schedule_title" />
+    <string name="notification_schedule_pattern" />
+    <string name="notification_schedule_error" />
+    <string name="comments"><u>Comments</u></string>
+    <string name="desc"><u>Description</u></string>
+    <string name="name"><u>Name</u></string>
+    <string name="emailAddress"><u>Email</u></string>
+    <string name="mobile"><u>Mobile Number</u></string>
+</resources>

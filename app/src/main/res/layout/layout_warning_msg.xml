@@ -1,0 +1,58 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="WARNING"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/montserratblack"/>
+        <TextView
+            android:id="@+id/warningmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="SUCCESS"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/montserratsemibold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/btnYess"
+            style="@style/TextAppearance.Todo.Button"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Exit"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/btnNo"
+            style="@style/TextAppearance.Todo.Button"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

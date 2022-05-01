@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "104657497467",
+    "firebase_url": "https://todoinner-default-rtdb.firebaseio.com",
+    "project_id": "todoinner",
+    "storage_bucket": "todoinner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104657497467:android:9797ab7b20fea9fffae1de",
+        "android_client_info": {
+          "package_name": "com.machine.dailytodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104657497467-ao4miljc7not8p9n6gp3i16kvr6b8995.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.machine.dailytodo",
+            "certificate_hash": "726849ec71a9d11a5f2880869ddce641b1bef1c7"
+          }
+        },
+        {
+          "client_id": "104657497467-s6rksvtermh3711htive6ea8jnaus2ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9x8JhMHWmRohcTOYmXGdrUpeP-haihWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104657497467-s6rksvtermh3711htive6ea8jnaus2ug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

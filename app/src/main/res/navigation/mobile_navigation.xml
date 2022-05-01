@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <action
+        android:id="@+id/action_global_to_internetFragment"
+        app:destination="@id/internetFragment"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="false" />
+    <action
+        android:id="@+id/action_global_to_splashFragment"
+        app:destination="@id/splashFragment"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="false" />
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.machine.dailytodo.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.machine.dailytodo.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mobileLoginFragment"
+            app:destination="@id/mobileLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.machine.dailytodo.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_allDataFragment"
+            app:destination="@id/allDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/internetFragment"
+        android:name="com.machine.dailytodo.ui.internet.InternetFragment"
+        android:label="fragment_internet"
+        tools:layout="@layout/fragment_internet" />
+    <fragment
+        android:id="@+id/mobileLoginFragment"
+        android:name="com.machine.dailytodo.ui.mobilelogin.MobileLoginFragment"
+        android:label="fragment_mobile_login"
+        tools:layout="@layout/fragment_mobile_login" >
+        <action
+            android:id="@+id/action_mobileLoginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_mobileLoginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.machine.dailytodo.ui.register.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.machine.dailytodo.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/allDataFragment"
+        android:name="com.machine.dailytodo.ui.details.AllDataFragment"
+        android:label="fragment_all_data"
+        tools:layout="@layout/fragment_all_data" />
+</navigation>
